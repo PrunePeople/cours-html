@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Retour</a>
+
+    <h1>Images & Vidéos</h1>
+
+
+    <h2>Type d'image</h2>
+    <h3>JPG</h3>
+        <p>Format pour les photos qui ont beaucoup de détails</p>
+    <h3>PNG</h3>
+        <p>Format pour la transparence</p>
+    <h3>SVG</h3>
+        <p>Format vectoriel</p>
+    <h3>GIF</h3>
+        <p>Format animé qui gère assez mal la transparence</p>
+
+    <h2>Tests images</h2>
+    <img src="/img/405999_6315b32c5b75b.jpg" width="650" height="350">
+    <!-- Attribut src: source où on prend l'image -->
+    <!-- Attribut width et height: redimensionne l'image /!\ mauvaise pratique -->
+    <!-- Il vaut mieux exporter l'image DEJA aux dimensions voulues -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nobis distinctio facilis quisquam a est voluptates vel obcaecati aperiam. Corrupti natus quaerat fugiat totam nulla iusto cumque ad eos dolor.</p>
+
+    <img src="/img/405999_6315b32c5b75b.jpg" width="650" height="350" title="Le héros de Zelda s'appelle Link!!" alt="Zelda Breath of the wild">
+    <!-- Attribut title: permet de mettre un titre à l'image => il s'affiche en info-bulles lors du passage de souris-->
+    <!-- Attribut alt: descriptif de l'image sous forme de texte à utiliser dans les cas où l'image en s'affichera pas /! utile pour le référencement naturel du site-->
+
+    <a href="/img/le-grand-retour-de-zelda-le-12-mai_7420292_676x381p.jpg" target="_blank">
+    <!-- Attribut target: définit la fenêtre cible dans laquelle la page cible doit s'affciher -- surtout utilisé si la page possède des cadres-->
+        <!-- _blank: nouvelle fenêtre
+        _parent: cadre parent -- par défaut
+        _self: cadre hôte
+        _top: fenêtre hôte 
+        nom du cadre: cadre du nom cité -->
+        <img src="/img/405999_6315b32c5b75b.jpg" width="650" height="350">
+    </a>
+    
+    <h2>Tests Vidéos</h2>
+    <video controls width="250" autoplay>
+    <!-- Attribut controls permet d'afficher els contrôles de la vidéo -->
+    <!-- Attribut autoplay permet de lancer la vidéo automatiquement -->
+        <source src="/video/pexels-mart-production-7565438-1080x1920-25fps.mp4" type="video/mp4" alt="Blouuuuouuuu">
+        <source src="/video/pexels-mart-production-7565438-1080x1920-25fps.webm" type="video/webm" alt="Blouuuuouuuu">
+        <!-- Il est intéressant de mettre plusieurs sources avec plusieurs types au cas où le navigateur ne puisse pas interpréter l'une ou l'autre source -->
+        Désolé, votre naviagteur ne supporte pas le format de vidéos
+        <!-- Ne pas hésiter à écrire un message d'erreur si jamais il n'est pas possible de lire la vidéo  -->
+    </video>
+
+</body>
+</html>

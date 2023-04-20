@@ -1,0 +1,26 @@
+header {
+    background-color: rgb(3, 3, 42);
+    color: white;
+}
+
+nav {
+    background-color: rgb(13, 13, 72);
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+main {
+    background-color: black;
+}
+
+section {
+    background-color: rgb(44, 44, 142);
+    color: white;
+}
+
+footer {
+    background-color: rgb(92, 124, 213);
+}

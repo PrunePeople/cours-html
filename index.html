@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Balise auto-fermante - vestige des versions précédentes - où on spécifié les règles du languages -->
+
+<html lang="en">
+<!-- Element racine de toute la page - contient toutes les autres balises de la page -->
+
+<head>
+    <!-- Balise de configuration - tout éléments non prévus à l'écran dans cette balise -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    <!-- Titre du site -->
+</head>
+
+<body>
+    <!-- Contenu de la page qui seront visibles sur votre page -->
+
+
+    <a href="page1.html">Lien 1 vers page paragraphes et liens</a>
+    <!-- Lien : href: lien de redirection-->
+
+    <a href="page1.html#paragraphe3">Lien 2 vers paragraphes et liens</a>
+    <!-- Lien vers le paragraphe 3 via l'id "paragraphe3" => "#paragraphe3" de la page 1 "page1.html" -->
+
+    <a href="page2.html">Lien vers page tableaux de données</a>
+
+    <a href="page3.html">Lien vers page formulaire</a>
+
+    <a href="page4.html">Lien vers page images & vidéos</a>
+
+    <a href="page5.html">Lien vers page iframe</a>*
+
+    <a href="page6.html">Lien vers page Layout</a>
+
+
+
+    <h1>Mon titre H1</h1>
+    <h2>Mon titre H2</h2>
+    <h3>Mon titre H3</h3>
+    <h4>Mon titre H4</h4>
+    <h5>Mon titre H5</h5>
+    <h6>Mon titre H6</h6>
+    <!-- Différents titres -->
+
+
+    <H2>Raccourcis</H2>
+    <a href="">inserer du texte ici</a>
+    <!-- Raccourci: a{clique moi} -->
+
+    <ul>
+        <li></li>
+    </ul>
+    <!-- Raccourci: ul>li -->
+
+    <ul>
+        <li>
+            <li></li>
+        </li>
+    </ul>
+    <!-- Raccourci: ul>li>li -->
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- Raccourci: ul>li*3 -->
+
+    <ul>
+        <li>
+            <p></p>
+            <a href=""></a>
+        </li>
+        <li>
+            <p></p>
+            <a href=""></a>
+        </li>
+    </ul>
+    <!-- Raccourci! ul>li*2>p+a -->
+
+    <ul class="nomDeClasse"></ul>
+    <!-- Raccourci: ul.nomDeClasse -->
+
+    <ul>
+        <li>
+            <p></p>
+            <img src="" alt=""><a href=""></a></li>
+        <li>
+            <p></p>
+            <img src="" alt="">
+        </li>
+        <li>
+            <p></p>
+            <img src="" alt="">
+        </li>
+    </ul>
+    <!-- Raccourci: ul>(li>p+img+a)+li*2>p+img -->
+
+
+    <H2>Liste de fruits</H2>
+    <ul>
+        <li>Banane</li>
+        <li>Orange</li>
+        <li>Pomme</li>
+    </ul>
+    <!-- Liste avec puces -->
+    <ol>
+        <li>Banane</li>
+        <li>Orange</li>
+        <li>Pomme</li>
+    </ol>
+    <!-- Liste avec chiffres -->
+
+    <h2>Menus de navigation</h2>
+    <H3>Menu de navigation 1</H3>
+    <ul style="list-style: none;">
+        <!-- Enlever les puces de la liste -->
+        <li style="display: inline;">
+        <!-- Mettre la liste sur une seule ligne -->
+            <a href="page1.html">Lien vers page 1</a>
+        </li>
+        <li style="display: inline;">
+            <a>Lien lambda</a>
+        </li>
+    </ul>
+    <h3>Menu de navigation 2</h3>
+    <ul>
+        <li>li 1
+            <ul>
+                <li>li dans li1</li>
+                <li>li dans li1</li>
+                <li>li dans li1</li>
+            </ul>
+        </li>
+        <li>li 2</li>
+    </ul>
+    <!-- Une liste dans une liste, utile pour menu déroulant -->
+
+
+
+</html>
+<!-- Structure HTML commune régit par le W3C -> Standardisation du langage HTML avec une mise en place de certaines normes communes -->

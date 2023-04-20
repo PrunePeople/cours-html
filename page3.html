@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Retour</a>
+
+    <H1>Formulaire</H1>
+
+    <form action="" method="post">
+    <!-- attribut action: url du programme qui traitera les informations soumises par le formulaire -->
+    <!-- attribut method: permet de savoir dans quel scénario on va se trouver => get (recuperation de données depuis la DB) ou post (modification de données sur la DB)-->
+
+        <fieldset>
+        <!-- Encadrement/Bordure -->
+            <label for="nom">Nom</label>
+            <!-- label: légende du champ -->
+            <!-- attribut for pour montrer qu'il est relié à un input par exemple, par l'id-->
+            <input type="text" id="nom">
+            <!-- input: type de champ + différents types proposés-->
+
+            <br>
+            <br>
+
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" placeholder="exemple de prénom">
+            <!-- Attribut placeholder: légende de fond, disparait si l'utilisateur rentre une valeur -->
+
+            <br>
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" value="test@mail.com">
+            <!-- type text respecte une structure du type: nom@domaine.tld -->
+            <!-- attribut value: contient la valeur renseigné par l'utilisateur dans le champ, par défaut: "" -->
+
+            <br>
+            <br>
+
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="mdp" value="">
+            <!-- type password: saisie par l'utilisateur automatiquement cachée -->
+
+            <br>
+            <br>
+
+            <label for="anniversaire">Date de naissance</label>
+            <input type="date" id="anniversaire" value="">
+            <!-- type date: saisie d'une date au format JJ/MM/AAAA via un calendrier -->
+
+            <br>
+            <br>
+
+            <h4>Choisissez vos loisirs préférés:</h4>
+            <label for="cinema">Cinéma</label>
+            <input type="checkbox" id="cinema" name="loisirs" value="cinema" checked>
+            <!-- Attribut checked: coché par défaut - choix multiple possible -->
+            <label for="theatre">Théâtre</label>
+            <input type="checkbox" id="theatre" name="loisirs" value="theatre">
+            <!-- Attribut name: spécifie un nom pour l'élément côté JS par exemple mais sert aussi de référence lors de la soumission des données du formulaire -->
+            <!-- si plusieurs input ont le même attribut name, la chaîne envoyée sera sous la forme loisirs=cinema&loisirs=theatre&loisirs=peinture (si les 3 sont cochés) -->
+            <label for="peinture">Peinture</label>
+            <input type="checkbox" id="peinture" name="loisirs" value="peinture">
+
+            <br>
+            <br>
+
+            <h4>Quel est votre sexe?</h4>
+            <label for="masculin">Homme</label>
+            <input type="radio" id="masculin" name="sexe" value="m">
+            <!-- type radio: choix unique -->
+            <label for="femme">Femme</label>
+            <input type="radio" id="femme" name="sexe" value="f">
+
+            <br>
+            <br>
+
+            <h4>Dans quel pays habitez-vous?</h4>
+            <label for="pays">Votre pays</label>
+            <select id="pays" name="pays">
+                <!-- Sous forme de liste -->
+                <option value="fr">France</option>
+                <option value="esp">Espagne</option>
+                <option value="bel">Belgique</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4>Quel animal possédez-vous?</h4>
+            <label for="animal">Votre animal</label>
+            <select id="animal" name="animal" multiple>
+                <!-- Attribut multiple: Liste sous forme de "tableau" où l'on voit toutes les options d'un coup + possibilité de selectionner plusieurs options en maintenant ctrl-->
+                <option value="chien" disabled>Animal par défaut</option>
+                <!-- attribut disabled: permet d'empecher l'utilisateur de sélectionner cette option -->
+                <optgroup label="A poils">
+                <!-- Permet de faire des "catégories" d'options -- le label n'est pas cliquable et est en gras -->
+                    <option value="chien">Chien</option>
+                    <option value="chat">Chat</option>
+                    <option value="lapin">Lpain</option>
+                </optgroup>
+                <optgroup label="A plumes">
+                    <option value="poule">Poule</option>
+                    <option value="Perroquet">Perroquet</option>
+                </optgroup>
+                <optgroup label="A écailles">
+                    <option value="poisson">Poisson</option>
+                    <option value="serpent">Serpent</option>
+                </optgroup>
+            </select>
+            <!-- Raccourci: select>option*3 -->
+
+            <br>
+            <br>
+
+            <label for="message">Votre message</label>
+            <textarea rows="5" cols="30" id="message" value=""></textarea>
+            <!-- Attribut textarea: plusieurs lignes de texte possible -->
+            <!-- Attribut rows et cols: définit la taille exacte qui doit être occupée par l'élément textarea -->
+            <!-- rows (nombre de ligne ou hauteur du champ- par défaut à 2) et cols (nombre de colonnes ou largeur du champ - par défaut à 20) -->
+
+            <br>
+            <br>
+
+            <input id="produit" name="produit1" type="hidden" value="HUuY887">
+            <!-- Type hidden: permet de récupérer la valeur de cet identifiant sans le montrer à l'utilisateur ni possibilité de le modifier -->
+
+            <input type="reset" value="Effacer le formulaire">
+            <!-- type reset: permet d'effacer les données écrites du formulaire -->
+            <input type="submit" value="Envoyer le formulaire">
+            <!-- type submit: pour envoyer les données + rechargement de page (comportement par défaut d'un formulaire) -->
+        </fieldset>
+    </form>
+</body>
+</html>

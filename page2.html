@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Retour</a>
+    
+    <H1>Tableau de données</H1>
+    <h2>Tableaux simples</h2>
+    <table>
+        <!-- Composant parent -->
+        <tr>
+        <!-- Création d'une ligne dans un tableau -->
+            <td>
+            <!-- Chaque ligen d'un tableau contient des cellules, crées par "td" -->
+            </td>
+        </tr>
+    </table>
+
+    <table border="1">
+    <!-- border => pas la bonne pratique, juste pour voir le bord des cellules -->
+        <tr>
+            <td>Cellule 1</td>
+            <td>Cellule 2</td>
+            <td>Cellule 3</td>
+        </tr>
+    </table>
+    <!-- Raccourci: table>tr>td*3 -->
+    <!-- Une ligne avec 3 cellules -->
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <td>Cellules</td>
+            <td>Cellules</td>
+            <td>Cellules</td>
+        </tr>
+        <tr>
+            <td>Cellules</td>
+            <td>Cellules</td>
+            <td>Cellules</td>
+        </tr>
+        <tr>
+            <td>Cellules</td>
+            <td>Cellules</td>
+            <td>Cellules</td>
+        </tr>
+    </table>
+    <!-- 3 lignes et 3 cellules sur chaque ligne -->
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <th>Cellules</th>
+            <th>Cellules</th>
+            <th>Cellules</th>
+            <!-- th permet d'avoir directement le style en gras à l'intérieur des cellules -->
+        </tr>
+    </table>
+
+    <h2>Tableaux complexes</h2>
+    <table border="1">
+        <caption>Légende du tableau</caption>
+        <!-- permet de mettre une légende à un tableau => Indication pour le navigateur -->
+        <thead>
+            <!-- Défini l'en-tête d'un tableau -->
+            <tr>
+                <th>Titre 1</th>
+                <th>Titre 2</th>
+                <th>Titre3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Définit le corps d'un tableau -->
+            <tr>
+                <td rowspan="2">Cellule 1</td>
+                <!-- rospan: Permet de prendre l'espace de deux cellules sur la hauteur /!\ ne les fusionne pas -->
+                <!-- On note l'abscence de la cellule 3 sur la ligne du dessous!!  -->
+                <td>Cellule 2</td>
+                <td>Cellule 3</td>
+            </tr>
+            <tr>
+                <td>Cellule 1</td>
+                <td>Cellule 2</td>
+            </tr>
+            <tr>
+                <td>Cellule 1</td>
+                <td>Cellule 2</td>
+                <td>Cellule 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- Définit le bas d'un tableau -->
+            <th>Cellule 1</th>
+            <td colspan="2">Cellule 2</td>
+            <!-- clospan => permet de prendre l'espace deux celulles sur la longueur /!\ ne les fusionne pas 
+            On note l'abscence d'une troisième cellule ici ! D'où le fait que ça ne les fusionne pas! -->
+        </tfoot>
+    </table>
+
+    <br>
+
+    <h2>Tableau budget</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Catégorie</th>
+                <th>Prix</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Loyer</th>
+                <td>560€</td>
+            </tr>
+            <tr>
+                <th>Eau</th>
+                <td>25€</td>
+            </tr>
+            <tr>
+                <th>Electricité</th>
+                <td>25€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>610€</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
